@@ -1,0 +1,8 @@
+2023-08-30 15:05:12.814 [main] INFO  api.test.UserTests - ************** Creating User ******************
+2023-08-30 15:05:15.756 [main] INFO  api.test.UserTests - ************** User is Created ******************
+2023-08-30 15:05:15.771 [main] INFO  api.test.UserTests - ************** Reading User Info ******************
+2023-08-30 15:05:17.006 [main] INFO  api.test.UserTests - ************** User Info Displayed ******************
+2023-08-30 15:05:17.014 [main] INFO  api.test.UserTests - ************** Updating User ******************
+2023-08-30 15:05:18.250 [main] INFO  api.test.UserTests - ************** User Updated ******************
+2023-08-30 15:05:18.254 [main] INFO  api.test.UserTests - ************** Deleting User ******************
+2023-08-30 15:05:19.539 [main] INFO  api.test.UserTests - ************** User Deleted ******************
