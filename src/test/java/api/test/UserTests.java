@@ -29,7 +29,7 @@ public class UserTests {
 		userPayload.setEmail(faker.internet().safeEmailAddress());
 		userPayload.setPassword(faker.internet().password(5, 10));
 		userPayload.setPhone(faker.phoneNumber().cellPhone());
-
+	
 		logger = LogManager.getLogger(this.getClass());
 	}
 

@@ -13,9 +13,9 @@ import java.util.Date;
 
 public class ExtentReportManager implements ITestListener {
 
-	public ExtentSparkReporter sparkReporter;
-	public ExtentReports extent;
-	public ExtentTest test;
+	public ExtentSparkReporter sparkReporter;// Responsible for generating HTML reports
+	public ExtentReports extent;//responsible for displaying infos
+	public ExtentTest test;//writes tests in the reports
 	String repName;
 
 	public void onStart(ITestContext testContext) {

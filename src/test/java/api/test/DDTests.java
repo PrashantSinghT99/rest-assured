@@ -12,7 +12,6 @@ public class DDTests {
 	@Test(priority = 1, dataProvider = "Data", dataProviderClass = DataProviders.class)
 	public void testPostUser(String userId, String userName, String fname, String lname, String useremail, String pwd,
 			String ph) {
-
 		User userPayload = new User();
 		userPayload.setId(Integer.parseInt(userId));
 		userPayload.setUsername(userName);

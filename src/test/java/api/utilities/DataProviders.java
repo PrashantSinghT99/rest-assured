@@ -1,6 +1,7 @@
 package api.utilities;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.testng.annotations.DataProvider;
 
@@ -24,6 +25,7 @@ public class DataProviders {
 				apidata[i-1][j]=xl.getCellData("Sheet1", i, j);
 			}
 		}
+		//System.out.println(Arrays.deepToString(apidata));
 		return apidata;
 	}
 	
