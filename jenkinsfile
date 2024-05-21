@@ -1,0 +1,27 @@
+pipeline {
+    agent {
+        docker {
+            image 'openjdk:11'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'apt-get update'
+                sh 'apt-get install -y maven'
+                sh 'mvn compile'
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'testData/UserData.xlsx'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'mvn clean test'
+            }
+        }
+    }
+}
